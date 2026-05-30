@@ -77,10 +77,6 @@ Measures of central tendency describe the central or typical value of a dataset.
 
 The arithmetic average of observations.
 
-[
-\bar{x}=\frac{\sum_{i=1}^{n}x_i}{n}
-]
-
 Properties:
 
 * Uses all observations.
@@ -121,17 +117,10 @@ Range = Maximum - Minimum
 
 Measures average squared deviation from the mean.
 
-[
-\sigma^2 = \frac{\sum (x_i-\mu)^2}{N}
-]
 
 ### Standard Deviation
 
 Square root of variance.
-
-[
-\sigma = \sqrt{\sigma^2}
-]
 
 Properties:
 
@@ -140,9 +129,6 @@ Properties:
 
 ### Coefficient of Variation
 
-[
-CV=\frac{\sigma}{\mu}\times100
-]
 
 Used for comparing variability across datasets.
 
@@ -201,24 +187,34 @@ Outliers are observations significantly different from the majority of data.
 ### Z-Score Method
 
 Measures distance from mean in standard deviation units.
+if distance in terms of SD units >=3 in either side considered as outlier.
 
-[
-Z=\frac{x-\mu}{\sigma}
-]
+## Advantages
 
-Common Rule:
+- Simple and computationally efficient.
+- Works well for approximately normal distributions.
 
-[
-|Z| > 3
-]
+## Limitations
 
-Observation is considered an outlier.
+- Sensitive to extreme values.
+- May perform poorly on highly skewed distributions.
 
 ### IQR Method
 
 Based on quartiles and resistant to extreme values.
-
 Suitable for skewed datasets.
+
+## Interpretation
+
+- Values within the fences are considered normal observations.
+- Values outside the fences are considered potential outliers.
+- Box plots visually represent these outliers as individual points beyond the whiskers.
+
+## Advantages
+
+- Robust to extreme values
+- Does not assume normal distribution
+- Widely used in Exploratory Data Analysis (EDA)
 
 ---
 
@@ -239,16 +235,20 @@ Applications:
 
 Describes the relative likelihood of a continuous random variable.
 
-Properties:
+## Interpretation
 
-[
-P(a \leq X \leq b)
+- PDF values themselves are not probabilities.
+- Probability is represented by the area under the curve.
+- Larger density indicates a higher likelihood of observing values in that region.
+
+## Applications
+
+- Distribution analysis
+- Statistical modeling
+- Machine Learning
+- Risk analysis
+
 ==================
-
-\int_a^b f(x),dx
-]
-
-Area under the PDF equals 1.
 
 ---
 
@@ -256,14 +256,23 @@ Area under the PDF equals 1.
 
 Represents cumulative probability up to a value.
 
-[
-F(x)=P(X\le x)
-]
-
 Properties:
 
 * Monotonically increasing.
 * Ranges from 0 to 1.
+
+## Interpretation
+
+- CDF gives cumulative probability up to a point.
+- The value of the CDF is always between 0 and 1.
+- It represents the proportion of observations less than or equal to a given value.
+
+## Applications
+
+- Percentile calculations
+- Probability estimation
+- Statistical inference
+- Reliability analysis
 
 ---
 
@@ -312,10 +321,6 @@ Applications:
 
 A symmetric bell-shaped distribution.
 
-[
-X \sim N(\mu,\sigma^2)
-]
-
 Characteristics:
 
 * Mean = Median = Mode
@@ -327,10 +332,6 @@ Characteristics:
 ## 12. Log-Normal Distribution
 
 A variable follows a log-normal distribution if its logarithm follows a normal distribution.
-
-[
-Y=\ln(X)
-]
 
 Applications:
 
@@ -390,10 +391,6 @@ Measures directional relationship between variables.
 Cov(X,Y)
 ========
 
-\frac{\sum (X_i-\bar X)(Y_i-\bar Y)}
-{n-1}
-]
-
 Interpretation:
 
 * Positive → variables increase together.
@@ -405,18 +402,6 @@ Interpretation:
 ## 15. Pearson Correlation
 
 Measures linear association.
-
-[
-r=
-\frac{Cov(X,Y)}
-{\sigma_X\sigma_Y}
-]
-
-Range:
-
-[
--1 \le r \le 1
-]
 
 Interpretation:
 
@@ -435,12 +420,6 @@ Useful when:
 * Data is not normally distributed.
 * Relationship is non-linear.
 * Outliers are present.
-
-Range:
-
-[
--1 \le \rho \le 1
-]
 
 ---
 
@@ -462,8 +441,10 @@ Descriptive_Statistics/
 │
 ├── Descriptive_Statistics.ipynb
 ├── requirements.txt
+├── MIT LICENSE
+├── iris.csv
+├── tips.csv.txt
 ├── README.md
-└── images/
 ```
 
 ---
