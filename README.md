@@ -1,6 +1,6 @@
 # Descriptive Statistics with Python
 
-##[Open In Colab](https://colab.research.google.com/drive/1yij1kPQLAxOPhyubvDmLrRHae18T8eAc?usp=sharing)
+##[Open In Colab](https://colab.research.google.com/github/officialTechie2007/Descriptive_Statistics/blob/main/Descriptive_Stat.ipynb)
 
 ## Overview
 
