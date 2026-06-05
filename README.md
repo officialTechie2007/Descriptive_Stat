@@ -1,6 +1,6 @@
 # Descriptive Statistics with Python
 
-##[Open In Colab](https://colab.research.google.com/github/officialTechie2007/Descriptive_Statistics/blob/main/Descriptive_Stat.ipynb)
+##[Open In Colab](https://colab.research.google.com/github/officialTechie2007/Descriptive_Statistics/blob/main/Descriptive_Stat.ipynb?authuser=2)
 
 ## Overview
 
@@ -462,6 +462,38 @@ Descriptive_Statistics/
 * Feature Engineering
 
 ---
+
+# Acknowledgment
+
+Some statistical concepts and initial implementation ideas were inspired by publicly available educational notebooks, tutorials, and open learning resources. The documentation, explanations, code organization, analysis workflow, visualizations, and learning notes were independently developed and adapted for educational purposes as part of my learning journey in Statistics, Data Analysis, and Machine Learning.
+
+## Recommended Learning Resources
+
+For readers interested in exploring these topics further, the following books are highly recommended:
+
+### Statistics & Probability
+
+* *Practical Statistics for Data Scientists* — Peter Bruce, Andrew Bruce, and Peter Gedeck
+* *Think Stats* — Allen B. Downey
+* *An Introduction to Statistical Learning (ISLR)* — Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor
+
+### Data Analysis with Python
+
+* *Python for Data Analysis* — Wes McKinney
+* *Data Science from Scratch* — Joel Grus
+
+### Machine Learning Foundations
+
+* *Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow* — Aurélien Géron
+* *Pattern Recognition and Machine Learning* — Christopher M. Bishop
+
+### Visualization
+
+* *Storytelling with Data* — Cole Nussbaumer Knaflic
+
+---
+
+This repository was created as part of my ongoing journey to build a strong foundation in Statistics, Data Analysis, and Artificial Intelligence through hands-on implementation and practical exploration.
 
 # Author
 
